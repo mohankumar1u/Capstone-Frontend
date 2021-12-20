@@ -27,8 +27,8 @@ padding :11px;
     width: 100%;
 }
 .MuiButtonGroup-grouped .MuiTab-textColorPrimary.Mui-selected{
-    width: 100% !important ;
+    width: 100% ;
 }
-.MuiTab-root{
+.auth-tab{
     width: 50%;
 }

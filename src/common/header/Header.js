@@ -10,8 +10,8 @@ import Typography from '@material-ui/core/Typography';
 import Box from '@material-ui/core/Box';
 import PropTypes from 'prop-types';
 import Paper from '@material-ui/core/Paper';
-import Login from '../login/login';
-import Register from '../register/register'
+import Login from '../../screens/login/Login';
+import Register from '../../screens/register/Register'
 
 
 function rand() {
@@ -51,7 +51,7 @@ function TabPanel(props) {
         >
             {value === index && (
                 <Box p={2}>
-                    <Typography>{children}</Typography>
+                    <Typography component={'span'} variant={'body2'}>{children}</Typography>
                 </Box>
             )}
         </div>
@@ -90,12 +90,12 @@ export default function Header() {
     const body = (
         <div style={modalStyle} className={classes.paper}>
             <div id="login_Header">Authentication</div>
-            <p id="simple-modal-description">
+            <div id="simdivle-modal-description">
                 <Paper square>
                     <Tabs value={tabValue} onChange={handleTabChange} indicatorColor="secondary"
                         textColor="primary" aria-label="disabled tabs example">
-                        <Tab id="tab" label="LOGIN" {...a11yProps(0)} />
-                        <Tab id="tab" label="REGISTER"  {...a11yProps(1)} />
+                        <Tab className='auth-tab' label="LOGIN" {...a11yProps(0)} />
+                        <Tab className='auth-tab' label="REGISTER"  {...a11yProps(1)} />
                     </Tabs>
                 </Paper>
                 <TabPanel value={tabValue} index={0}>
@@ -104,7 +104,7 @@ export default function Header() {
                 <TabPanel value={tabValue} index={1}>
                     <Register />
                 </TabPanel>
-            </p>
+            </div>
         </div>
     );
 

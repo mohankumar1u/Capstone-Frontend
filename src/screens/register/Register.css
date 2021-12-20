@@ -1,0 +1,23 @@
+#register-form{
+    width: 61%;
+    margin: auto;
+}
+.helper-text{
+    background: #464646;
+    color: white;
+    padding: 5px;
+    position: absolute;
+    bottom: -31px;
+    border-radius: 5px;
+    font-size: 0.8em;
+}
+.input-field{
+position: relative;
+margin-bottom: 10px;
+}
+.helper-ignore{
+    display: none;
+}
+#login-btn{
+    margin-top: 35px;
+}

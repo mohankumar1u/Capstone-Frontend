@@ -1,0 +1,11 @@
+.MuiButtonGroup-grouped .MuiTab-textColorPrimary.Mui-selected{
+    width: 100% !important ;
+}
+#tabs .tab{
+    width: 50%;
+    max-width: 100%;
+} 
+#tab2{
+    width: 50%;
+    max-width: 100%;
+}
