@@ -6,6 +6,8 @@ import Box from '@material-ui/core/Box';
 import PropTypes from 'prop-types';
 import Paper from '@material-ui/core/Paper';
 import { makeStyles } from '@material-ui/core/styles';
+import DoctorList from '../doctorList/DoctorList';
+import Appointment from '../appointment/Appointment';
 import '../home/Home.css'
 
 const useStyles = makeStyles((theme) => ({
@@ -65,10 +67,10 @@ export default function Home() {
             </Tabs>
         </Paper>
         <TabPanel value={tabValue} index={0}>
-           docter
+           <DoctorList/>
         </TabPanel>
         <TabPanel value={tabValue} index={1}>
-            tab2
+            <Appointment/>
         </TabPanel></div>
          );
     
