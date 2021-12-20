@@ -1,0 +1,34 @@
+#Header_container{
+display: flex;
+justify-content: space-between;
+background-color: purple;
+padding :11px;
+}
+#login_Header{
+    background-color: purple;
+    color: white;
+    padding :11px;
+}
+#Header_container img{
+    height: 35px;
+}
+#log_button{
+
+}
+#heading{
+    display: flex;
+}
+#title{
+    color: white;
+    margin: auto;
+    padding: 10px;
+}
+#auth_button_group{
+    width: 100%;
+}
+.MuiButtonGroup-grouped .MuiTab-textColorPrimary.Mui-selected{
+    width: 100% !important ;
+}
+.MuiTab-root{
+    width: 50%;
+}
