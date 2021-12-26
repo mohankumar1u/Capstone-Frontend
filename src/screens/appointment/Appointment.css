@@ -1,0 +1,15 @@
+#rating-model-header{
+    background-color: purple;
+    color: white;
+    height: 70px;
+    padding :11px;
+}
+#rating-body{
+    padding: 10px;
+}
+.rate-input{
+    margin: 10px;
+}
+#rating-header{
+    margin: auto 0;
+}
